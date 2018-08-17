@@ -315,8 +315,12 @@ a:focus,
 /* HEADER */
 /*--------------------*/
 
+.container {
+	max-height: 70px;
+}
+
 #mu-hero {
-	background-color: #0091ea;
+	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -371,9 +375,9 @@ a:focus,
 /* MENUE */
 /*--------------------*/
 
-.mu-navbar {
+/* .mu-navbar {
 	padding: 20px 0;
-}
+} */
 
 .mu-navbar-nav {
 	display: block;
@@ -399,6 +403,9 @@ a:focus,
 	transition: all 0.5s;
 }
 
+.navbar {
+	padding: 0;
+}
 
 .navbar-light .navbar-nav .active > .nav-link, 
 .navbar-light .navbar-nav .nav-link.active, 
@@ -2954,8 +2961,8 @@ a:focus,
 	}
 
 	.mu-navbar .navbar-toggler {
-		color: #fff;
-		border-color: #fff;
+		color: #ea9b3e;
+		border-color: #ea9b3e;
 		cursor: pointer;
 		padding: 10px 15px;
 	}
