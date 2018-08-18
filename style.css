@@ -1472,17 +1472,17 @@ a:focus,
 
 
 #mu-footer {
+	background: linear-gradient(264deg,#727272 0,#1a1a1a 100%);
 	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
+	padding: 1.5em 0
 }
 
 .mu-footer-top {
-	background-color: #0277bd;
 	display: inline;
 	float: left;
-	padding: 55px 0;
 	width: 100%;
 }
 
@@ -1547,6 +1547,28 @@ a:focus,
 	font-size: 12px;
 }
 
+.social-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
 .mu-footer-bottom {
 	background-color: #004f7f;
 	display: inline;
@@ -1571,7 +1593,6 @@ a:focus,
 }
 
 .mu-social-media a {
-	background-color: #3b5998;
 	border: 1px solid #babcbe;
 	border-radius: 50%;
 	color: #fff;
