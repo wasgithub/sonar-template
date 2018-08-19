@@ -232,6 +232,7 @@ iframe {
 	margin-bottom: 1em;
 	text-transform: uppercase;
 	font: 900 55px Lato;
+	letter-spacing: -1px;
 }
 
 .sub-title {
@@ -3655,7 +3656,10 @@ footer a {
 		width: 90%;
 		vertical-align: center;
 	}
-						
+
+	.body-container {
+		padding: 50px 0;		
+	}		
 	
 }
 
@@ -3815,10 +3819,6 @@ footer a {
 	.mu-backdrop {
 		height: 200px;
 	}
-
-	.body-container {
-		padding: 50px 0;		
-	}	
 
 }
 
