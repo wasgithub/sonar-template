@@ -1,4 +1,5 @@
 
+
 /*=====
 Template Name: B-Hero	
 Author: MarkUps
@@ -41,6 +42,12 @@ Version: 1.0
 body,
 html {
 	overflow-x:hidden;
+	height: 100%;
+}
+
+.main-container {
+	height: auto;
+	min-height: 100%;
 }
 
 body {
@@ -48,6 +55,7 @@ body {
 	color: #666666;
 	font-size: 16px;
 	font-weight: 400;
+	position: relative;
 }
 
 ul {
@@ -190,33 +198,46 @@ iframe {
 /* start custom */
 
 .main-container {
-	box-sizing: border-box
-}
-
-
-.body-container {
-	content:'';
-	min-height: 550px;
-	background: url('assets/images/banner-principal.png');
+		background: url('assets/images/banner-principal.png');
 	background-color: rgba(51,47,44,.9);
 	background-blend-mode: multiply;
 	background-position: center center;
 	background-repeat: no-repeat;
-	box-sizing: border-box;
-	padding: 50px;
-	display: flex;
+	position: relative;
+}
+
+.body {
+	height: 100vh;
+}
+
+.body-container {
+	/* content:''; */
+	width: 100%;
+	height: auto;
+	/* background: url('assets/images/banner-principal.png');
+	background-color: rgba(51,47,44,.9);
+	background-blend-mode: multiply;
+	background-position: center center;
+	background-repeat: no-repeat; */
+	/* box-sizing: border-box; */
+	padding: 50px 50px 50px 50px;
+	/* display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: center; */
 }
 
 .body-content {
 	width: 100%;
 	height: 100%;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+	padding: 84px 0;
 }
 
 .center-container {
 	text-align: center;
-	width: 100%;
+	max-width: 90%;
 }
 
 .icon-container {
@@ -260,6 +281,9 @@ iframe {
 .main-footer {
 	background: linear-gradient(264deg,#727272 0,#1a1a1a 100%);
 	padding: 1.6em 0;
+	position:absolute;
+	bottom:0;
+	width:100%;	
 }
 /* end footer */
 
@@ -395,6 +419,13 @@ a:focus,
 /*--------------------*/
 /* HEADER */
 /*--------------------*/
+
+.header {
+	background-color: #ffffff;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
 
 .container {
 	max-height: 70px;
@@ -1551,13 +1582,15 @@ a:focus,
 /*--------------------*/
 
 
-#mu-footer {
+.mu-footer {
 	background: linear-gradient(264deg,#727272 0,#1a1a1a 100%);
 	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
-	padding: 1.5em 0
+	padding: 1.5em 0;
+	position: absolute;
+	bottom: 0;
 }
 
 .mu-footer-top {
@@ -3411,8 +3444,6 @@ footer a {
 	.mu-backdrop {
 		height: 280px;
 	}
-
-	
 				
 }
 
@@ -3655,11 +3686,16 @@ footer a {
 		font-size: 14px;
 		width: 90%;
 		vertical-align: center;
+		margin-top: 5px;
 	}
 
 	.body-container {
 		padding: 50px 0;		
-	}		
+	}
+
+	.body-container {
+		height: 100%;
+	}	
 	
 }
 
@@ -3683,6 +3719,11 @@ footer a {
 		font-size: 22px;
 	}
 
+	.sub-title {
+		font-size: 10px;
+		line-height: 10px;
+	}
+
 	.mu-video-iframe-area {
 		padding: 15% 5%;
 	}
@@ -3694,6 +3735,10 @@ footer a {
 
 	.mu-filter-item-content {
 		padding-top: 26%;
+	}
+
+	.mu-footer {
+		padding-top: 0;
 	}
 
 	.mu-subscribe-form input {
